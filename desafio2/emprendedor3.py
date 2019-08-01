@@ -13,7 +13,7 @@ ucurrentyear = pventa * usuarios - gastos
 if ucurrentyear > 0:
 	ucurrentyear = ucurrentyear - (ucurrentyear * 35 / 100)
 
-#percent = ((ucurrentyear / ulastyear) - 1 ) * 100
-percent = (ucurrentyear / ulastyear) * 100
+percent = ((ucurrentyear / ulastyear) - 1 ) * 100
+#percent = (ucurrentyear / ulastyear) * 100
 
-print (percent)
+print (int(percent))

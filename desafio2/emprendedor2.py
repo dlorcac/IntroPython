@@ -13,6 +13,6 @@ gastos = float(sys.argv[5])
 utilidades = pventa * (usuariosp * 2) - gastos
 if utilidades > 0:
 	utilidades = utilidades - (utilidades * 35 / 100)
-	print(utilidades)
+	print(int(utilidades))
 else:
-  print(utilidades)
+  print(int(utilidades))
