@@ -1,11 +1,9 @@
 def gen(number):
     abc = 'abcdefghijklmnopqrstuvwxyz'
     acum = ''
-    p = 0
-    while p < number:
-        for i in abc(number):
-            acum = acum + i
-        p += 1
-        print(acum)
+    for i in abc:
+        acum = acum + i
+        if len(acum) == number:
+            print(acum)
             
-gen (4)
+gen (20)
