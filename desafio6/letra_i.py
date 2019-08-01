@@ -1,4 +1,4 @@
-def letra_o(n):
+def letra_i(n):
     contain_bounds = ""
     for i in range(n):
         contain_bounds += '*'
@@ -14,4 +14,4 @@ def letra_o(n):
     exit()
 
 #n = 5
-print(letra_o(5))
+print(letra_i(5))

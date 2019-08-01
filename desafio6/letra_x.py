@@ -1,17 +1,18 @@
-def letra_o(n):
-    contain_bounds = ""
-    for i in range(n):
-        contain_bounds += '*'
-    contain_middle = "  *"
-    for j in range(n - 2):
-        contain_middle += "   "
-    contain_middle += "\n"
+def letra_x(size):
+    i,j = 0,size - 1
 
+    while j >= 0 and i < size:
 
-    print(contain_bounds)
-    print(contain_middle * (n - 2), end = '')
-    print(contain_bounds)
-    exit()
+        initial_spaces = ' '*min(i,j)
+        middle_spaces = ' '*(abs(i - j) - 1)
+        final_spaces = ' '*(size - 1 - max(i,j))
 
-#n = 5
-print(letra_o(5))
+        if j == i:
+            print (initial_spaces + '*' + final_spaces)
+        else:
+            print (initial_spaces + '*' + middle_spaces + '*' + final_spaces)
+
+        i += 1
+        j -= 1
+
+print (letra_x(11))
