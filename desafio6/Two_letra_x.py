@@ -1,6 +1,12 @@
 def letra_x(size):
-    diag_a =
+    diag_a = ''
+    for i in range(0, size):
+        if i ==
+        else:
+        diag_a+=
+        diag_a=
 
+print (letra_x(11))
 
 ''' 
 def letra_x(size):

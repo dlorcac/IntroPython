@@ -4,6 +4,6 @@ def gen(number):
     for i in abc:
         acum = acum + i
         if len(acum) == number:
-            print(acum)
+            return (acum)
             
-gen (1)
+gen (5)
