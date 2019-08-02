@@ -6,4 +6,4 @@ def gen(number):
         if len(acum) == number:
             print(acum)
             
-gen (20)
+gen (1)

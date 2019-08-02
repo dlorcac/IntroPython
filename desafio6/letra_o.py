@@ -1,17 +1,23 @@
 def letra_o(n):
-    contain_bounds = ""
+    header = ""
     for i in range(n):
-        contain_bounds += '*'
-    contain_middle = "*"
+        header += '*'
+    center = "*"
     for j in range(n - 2):
-        contain_middle += " "
-    contain_middle += "*\n"
+        center += " "
+    center += "*\n"
+
+    return (header + '\n')  +   (center * (n - 2)) + (header)
 
 
-    print(contain_bounds)
-    print(contain_middle * (n - 2), end = '')
-    print(contain_bounds)
-    exit()
-
-n = 5
+n = 10
 print(letra_o(n))
+
+'''
+    print(header)
+    print(center * (n - 2), end = '')
+    print(header)
+    exit()
+'''
+
+

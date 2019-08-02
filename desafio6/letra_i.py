@@ -1,17 +1,28 @@
+import math
+
 def letra_i(n):
-    contain_bounds = ""
+    header = ""
     for i in range(n):
-        contain_bounds += '*'
-    contain_middle = "  *"
-    for j in range(n - 2):
-        contain_middle += "   "
-    contain_middle += "\n"
+        header += '*'
+    center = ""
+    mitad = math.ceil(n/2)
+    for j in range(1,n):
+        if j == mitad:
+            center += "*"
+        else:
+            center += " "
+    center += "\n"
+    print(center)
+    return (header + '\n') + (center * (n - 2)) + (header)
 
+n = 10
+print(letra_i(n))
 
-    print(contain_bounds)
-    print(contain_middle * (n - 2), end = '')
-    print(contain_bounds)
+'''
+    print(header)
+    print(center * (n - 2), end = '')
+    print(header)
     exit()
+'''
 
-#n = 5
-print(letra_i(5))
+
