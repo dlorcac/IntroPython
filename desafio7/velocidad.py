@@ -1,7 +1,7 @@
 def promedio(velocidad):
     suma=0
-    for pos,value in enumerate(velocidad):
-        suma = suma + value
+    for value in enumerate(velocidad):
+        suma = suma + value[1]
     return (suma/len(velocidad))
 
 
