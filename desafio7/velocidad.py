@@ -5,6 +5,7 @@ def promedio(velocidad):
     return (suma/len(velocidad))
 
 
+
 velocidad = [4, 4, 7, 7, 8, 9, 10, 10, 10,
             11, 11, 12, 12, 12, 12, 13, 13,
             13, 13, 14, 14, 14, 14, 15, 15,
