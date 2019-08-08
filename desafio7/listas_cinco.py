@@ -16,13 +16,12 @@ def promedio():
     media_col_3= reduce(lambda x,y: x + y, anid_list_agrup[2]) / len(anid_list_agrup[2])
     media_col_5= reduce(lambda x,y: x + y, anid_list_agrup[4]) / len(anid_list_agrup[4])
 
-    for fila in anid_list:
-        print(fila)
-        if fila[1] > media_col_2:
-            #print(fila[1])
-            list=[]
-            list.append(fila[1])
-            #print(fila[1])
-            return list
-pepe=promedio()
-print(pepe)
+    nuevalista=[]
+    columna2 = [[fila[i] for fila in anid_list] for i in range(5)]
+    for i in columna2[1]:
+        if i  > media_col_2:
+            nuevalista.append(i)
+
+    return nuevalista
+
+print(promedio())
